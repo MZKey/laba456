@@ -6,8 +6,7 @@ Point::Point()
 
 Point::Point(float x, float y)
 {
-	this->x = x;
-	this->y = y;
+	setCoordinate(x, y);
 }
 
 void Point::setX(float x)
@@ -17,5 +16,11 @@ void Point::setX(float x)
 
 void Point::setY(float y)
 {
+	this->y = y;
+}
+
+void Point::setCoordinate(float x, float y)
+{
+	this->x = x;
 	this->y = y;
 }
